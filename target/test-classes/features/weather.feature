@@ -1,3 +1,4 @@
+@OpenWeather
 @weather
 
 Feature: Open weather - 3/5 days forecast
