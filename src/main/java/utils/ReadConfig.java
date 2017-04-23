@@ -8,7 +8,7 @@ import java.util.Properties;
 public class ReadConfig {
 	String propValue = "";
 	InputStream inputStream = null;
-	String propFileName = "config.properties";
+	String propFileName = "set.properties";
 	
 	
 	

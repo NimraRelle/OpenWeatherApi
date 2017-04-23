@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7186" started-at="2017-04-21T20:02:39Z" finished-at="2017-04-21T20:02:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7186" started-at="2017-04-21T20:02:39Z" finished-at="2017-04-21T20:02:46Z">
+      <class name="tests.ValidateSchemes">
+        <test-method status="PASS" signature="assertErrorCodes()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertErrorCodes" duration-ms="2646" started-at="2017-04-21T23:02:39Z" finished-at="2017-04-21T23:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertErrorCodes -->
+        <test-method status="PASS" signature="assertStatusCodes1()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes1" duration-ms="1694" started-at="2017-04-21T23:02:42Z" finished-at="2017-04-21T23:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertStatusCodes1 -->
+        <test-method status="PASS" signature="assertStatusCodes2()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes2" duration-ms="1250" started-at="2017-04-21T23:02:43Z" finished-at="2017-04-21T23:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertStatusCodes2 -->
+        <test-method status="PASS" signature="assertStatusCodes3()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes3" duration-ms="449" started-at="2017-04-21T23:02:45Z" finished-at="2017-04-21T23:02:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertStatusCodes3 -->
+        <test-method status="PASS" signature="assertStatusCodes4()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes4" duration-ms="784" started-at="2017-04-21T23:02:45Z" finished-at="2017-04-21T23:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertStatusCodes4 -->
+        <test-method status="PASS" signature="validateSchemeForecast()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="validateSchemeForecast" duration-ms="326" started-at="2017-04-21T23:02:46Z" finished-at="2017-04-21T23:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSchemeForecast -->
+      </class> <!-- tests.ValidateSchemes -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
