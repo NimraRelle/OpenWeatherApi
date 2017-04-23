@@ -34,7 +34,7 @@ Examples:
 #The plus of the above implementation is that it is easy to be reused and the key:value 
 # pairs can be changed or to be added, removed acording to the specific scenarios
 # Minus is that it is not easiliy readable at the beginning
-#Annother possible implementation of the tables could have looked like that:
+#Another possible implementation of the tables could have looked like that:
 
 #Given I open urlpath forecast with parameters <params>
 #Then Response is valid according to ForecastScheme.json
