@@ -1,10 +1,9 @@
 package stepDef;
 
-import static org.hamcrest.Matchers.equalTo;
-
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -42,13 +41,10 @@ public class StepDef {
 	public void response_contains(String values) {
 		logger.info("RUNNING "+Thread.currentThread().getStackTrace()[1].getMethodName() + " ...... \n");
 		List<String[]> formattedValues = restClient.formatDataTableParams(values);
-		for (int i = 0; i < formattedValues.size(); i++) {
-			if (restClient.getValue(i).contains("asNumber")) {
-				String param = restClient.getValue(i).replace("asNumber", "");
-				response.then().body(restClient.getKey(i), equalTo(Integer.parseInt(param)));
-			} else
-				response.then().body(restClient.getKey(i), equalTo(restClient.getValue(i)));
+		for (int i = 0; i < formattedValues.size(); i++) {  
+		 Assert.assertEquals(restClient.getResponseAsString(response).getString(restClient.getKey(i)), restClient.getValue(i));
 		}
+
 		logger.info((response.body().prettyPrint()));
 	}
 	

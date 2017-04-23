@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import utils.ReadConfig;
@@ -86,7 +87,10 @@ public class ApiRestClient {
 		return requestParameters;
 	}
 	
-	
+	public JsonPath getResponseAsString(Response response){
+		JsonPath jsonPath = new JsonPath(response.body().asString());
+		return 	jsonPath;
+	}
 
 	/**
 	 * 
