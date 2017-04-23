@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OpenWeather">
+	<test name="test">
+		<classes>
+			<class name="restClient.Runner" />
+		</classes>
+	</test>
+</suite>

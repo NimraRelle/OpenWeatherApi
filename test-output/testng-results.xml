@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7186" started-at="2017-04-21T20:02:39Z" finished-at="2017-04-21T20:02:46Z">
+  <suite name="OpenWeather" duration-ms="145582" started-at="2017-04-23T07:15:06Z" finished-at="2017-04-23T07:17:31Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:restClient.Runner$RunnerA@1622f1b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="7186" started-at="2017-04-21T20:02:39Z" finished-at="2017-04-21T20:02:46Z">
-      <class name="tests.ValidateSchemes">
-        <test-method status="PASS" signature="assertErrorCodes()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertErrorCodes" duration-ms="2646" started-at="2017-04-21T23:02:39Z" finished-at="2017-04-21T23:02:42Z">
+    <test name="test" duration-ms="145582" started-at="2017-04-23T07:15:06Z" finished-at="2017-04-23T07:17:31Z">
+      <class name="restClient.Runner$RunnerA">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:restClient.Runner$RunnerA@1622f1b]" name="setUpClass" is-config="true" duration-ms="532" started-at="2017-04-23T10:15:06Z" finished-at="2017-04-23T10:15:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertErrorCodes -->
-        <test-method status="PASS" signature="assertStatusCodes1()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes1" duration-ms="1694" started-at="2017-04-21T23:02:42Z" finished-at="2017-04-21T23:02:43Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:restClient.Runner$RunnerA@1622f1b]" name="feature" duration-ms="128469" started-at="2017-04-23T10:15:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-04-23T10:17:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Open weather - 3/5 days forecast]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertStatusCodes1 -->
-        <test-method status="PASS" signature="assertStatusCodes2()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes2" duration-ms="1250" started-at="2017-04-21T23:02:43Z" finished-at="2017-04-21T23:02:45Z">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:restClient.Runner$RunnerA@1622f1b]" name="tearDownClass" is-config="true" duration-ms="110" started-at="2017-04-23T10:17:27Z" finished-at="2017-04-23T10:17:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertStatusCodes2 -->
-        <test-method status="PASS" signature="assertStatusCodes3()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes3" duration-ms="449" started-at="2017-04-21T23:02:45Z" finished-at="2017-04-21T23:02:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertStatusCodes3 -->
-        <test-method status="PASS" signature="assertStatusCodes4()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="assertStatusCodes4" duration-ms="784" started-at="2017-04-21T23:02:45Z" finished-at="2017-04-21T23:02:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertStatusCodes4 -->
-        <test-method status="PASS" signature="validateSchemeForecast()[pri:0, instance:tests.ValidateSchemes@2a5ca609]" name="validateSchemeForecast" duration-ms="326" started-at="2017-04-21T23:02:46Z" finished-at="2017-04-21T23:02:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSchemeForecast -->
-      </class> <!-- tests.ValidateSchemes -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- restClient.Runner$RunnerA -->
+    </test> <!-- test -->
+  </suite> <!-- OpenWeather -->
 </testng-results>

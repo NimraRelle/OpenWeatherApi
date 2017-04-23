@@ -5,11 +5,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+
 public class ReadConfig {
 	String propValue = "";
 	InputStream inputStream = null;
 	String propFileName = "set.properties";
 	
+	static final Logger logger = Logger.getLogger(ReadConfig.class);
 	
 	
 	public String readPropValues(String propName) {
@@ -27,7 +30,7 @@ public class ReadConfig {
 			propValue = prop.getProperty(propName);
 
 		} catch (Exception e) {
-			System.out.println("Exception: " + e);
+			logger.error("Exception: " + e);
 		} finally {
 			try {
 				inputStream.close();

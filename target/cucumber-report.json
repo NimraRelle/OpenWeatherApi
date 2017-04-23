@@ -1,0 +1,123 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 13,
+        "name": "3/5 days forecast - verify response with valid parameters",
+        "description": "",
+        "id": "open-weather---3/5-days-forecast;3/5-days-forecast---verify-response-with-valid-parameters;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2842187332,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I open urlpath forecast with parameters q\u003dUtrecht",
+            "match": {
+              "arguments": [
+                {
+                  "val": "forecast",
+                  "offset": 15
+                },
+                {
+                  "val": "q\u003dUtrecht",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDef.open_url(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48267334137,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Response is valid according to ForecastScheme.json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ForecastScheme.json",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDef.validate_scheme(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 184337133,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDef.status_code(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46581846188,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Response contains city.name\u003dUtrecht,,city.country\u003dNL,,city.id\u003d2745912asNumber",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city.name\u003dUtrecht,,city.country\u003dNL,,city.id\u003d2745912asNumber",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDef.response_contains(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@forecast"
+          },
+          {
+            "line": 1,
+            "name": "@forecastrr"
+          }
+        ]
+      }
+    ],
+    "name": "Open weather - 3/5 days forecast",
+    "description": "",
+    "id": "open-weather---3/5-days-forecast",
+    "keyword": "Feature",
+    "uri": "forecast.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@forecastrr"
+      }
+    ]
+  }
+]
