@@ -39,14 +39,34 @@
 						<goals>
 							<goal>test</goal>
 						</goals>
-						<configuration>
+						  <configuration>
 							<suiteXmlFiles>
 								<suiteXmlFile>testingAPI.xml</suiteXmlFile>
 							</suiteXmlFiles>
-
-						</configuration>
+						</configuration> 
+						
+					</execution>
+			</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<mainClass>utils.ReportMerger</mainClass>
+					<arguments>
+						<argument>target/cucumber-report/</argument>
+					</arguments>
+				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>

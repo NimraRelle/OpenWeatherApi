@@ -5,8 +5,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 public class RunnerForecast {
 	
-	@CucumberOptions(monochrome = true, format = {"pretty", 
-			"html:target/cucumber","json:target/cucumber-report.json"}, 
+	@CucumberOptions(monochrome = true, 
+			plugin = { "html:target/cucumber-report/report1",
+	                "json:target/cucumber1.json",
+	                },
 			features="src/test/resources/features", 
 			tags={"@forecast"},
 			glue = "classpath:stepDef")
