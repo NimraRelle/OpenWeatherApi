@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <suite name="OpenWeather" parallel="classes" thread-count="2">		
+ 	<test name="test">		
+ 		<classes>		
+ 			<class name="restClient.RunnerForecast" />
+ 			<class name="restClient.RunnerWeather" />		
+ 		</classes>		
+ 	</test>		
+ </suite>

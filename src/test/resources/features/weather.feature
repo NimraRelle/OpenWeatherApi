@@ -13,7 +13,7 @@ Examples:
 |params                                   |code|values                                                           |
 |q=Utrecht              |200 |name=Utrecht,,id=2745912      |
 |q=Utrecht,NL           |200 |name=Utrecht,,id=2745912      |
-|lat=52.0908,,lon=5.1222|200 |name=Utrecht,,id=2745912      |
+|lat=52.09,,lon=5.12|200 |name=Utrecht,,id=2745912,,coord.lat=52.09,,coord.lon=5.12      |
 |id=2745912             |200 |name=Utrecht,,id=2745912      |
 |zip=94040,us           |200 |name=Mountain View,,id=5375480|
 
