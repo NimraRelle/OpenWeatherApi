@@ -11,7 +11,6 @@ public class ReportMerger {
 
     public static void main(String[] args) throws Throwable {
         
-    	System.out.println(">>REPORTS<<<");
     	File reportDirectory = new File(args[0]);
         if (reportDirectory.exists()) {
             ReportMerger munger = new ReportMerger();
@@ -53,8 +52,7 @@ public class ReportMerger {
      * @param target
      * @param source
      */
-    @SuppressWarnings("deprecation")
-	public void mergeFiles(File target, File source) throws Throwable {
+    public void mergeFiles(File target, File source) throws Throwable {
         //copy embeded images
         Collection<File> embeddedImages = FileUtils.listFiles(source.getParentFile(), new String[]{reportImageExtension}, true);
         for (File image : embeddedImages) {
@@ -74,8 +72,7 @@ public class ReportMerger {
      *
      * @param reportFile
      */
-    @SuppressWarnings("deprecation")
-	public void renameEmbededImages(File reportFile) throws Throwable {
+    public void renameEmbededImages(File reportFile) throws Throwable {
         File reportDirectory = reportFile.getParentFile();
         Collection<File> embeddedImages = FileUtils.listFiles(reportDirectory, new String[]{reportImageExtension}, true);
 
